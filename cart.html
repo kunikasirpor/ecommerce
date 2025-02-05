@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart - Galaxy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .popup {
+            background-color: pink;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        
+        .show-popup {
+            display: block;
+        }
+
+        .cart-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+
+        .cart-item button {
+            background-color: pink;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .cart-item button:hover {
+            background-color: #ff66b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>「 ✦ GALAXY ✦ 」</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <a href="cart.html"><i class="fas fa-shopping-cart cart-icon"></i></a>
+            </ul>
+        </nav>
+    </header>
+    <div class="popup show-popup">
+        <p>Item added to cart successfully!</p>
+    </div>
+
+    <main>
+        <section class="cart-container">
+            <h2>Your Cart</h2>
+            <div class="cart-item">
+                <img src="related1.jpg" alt="Icecream Theme T-Shirt">
+                <p>Icecream Theme T-Shirt - ₹899</p>
+                <button>Remove</button>
+            </div>
+            <div class="cart-item">
+                <img src="related2.jpg" alt="Sea Scape Sweatshirt">
+                <p>Sea Scape Sweatshirt - ₹1599</p>
+                <button>Remove</button>
+            </div>
+            <div class="cart-item">
+                <img src="product1.jpg" alt="Cotton Candy Sweatshirt">
+                <p>Cotton Candy Sweatshirt - ₹1299</p>
+                <button>Remove</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

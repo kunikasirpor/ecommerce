@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFB6C1;
+}
+
+header {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: white;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: #ffb6c1; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: white;
+    color: #ff69b4;
+    border-radius: 5px;
+}
+
+.product {
+    width: 180px; 
+    border: 2px solid #ffb6c1;
+    padding: 8px;
+    background: white;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.product img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+    flex-wrap: wrap;
+}
+
+.shop-items h2 {
+    color: white;
+    background-color:  #ff7eb3; 
+    padding: 10px 20px;
+    border-radius: 10px; 
+    display: inline-block; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    margin: 20px auto;
+    text-align: center;
+    display: block;
+    width: fit-content;
+}
+
+.gallery {
+    flex: 1;
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.thumbnails img {
+    width: 60px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.2);
+}
+
+.details {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.details h2 {
+    margin-top: 0;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #e60000;
+}
+
+.add-to-cart {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.add-to-cart:hover {
+    background: #cc5500;
+}
+
+.product, .reviews, .related-products {
+    display: flex;
+    border: 5px solid #ffccd5;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reviews h3, .related-products h3 {
+    text-align: center;
+}
+
+.related {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; 
+}
+
+.related .item {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px auto;
+}
+
+.related .item img {
+    width: 350px;
+    border-radius: 10px;
+}
+
+.related .item:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1200px) {
+    .products {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .product {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .related .item {
+        margin: 10px 0;
+    }
+
+    .gallery img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .header-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .product {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .products {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .price {
+        font-size: 1.2rem;
+    }
+
+    .add-to-cart {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
